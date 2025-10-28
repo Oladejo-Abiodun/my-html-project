@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ludo Board</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: #f8f9fa;
+      }
+      table {
+        border-collapse: collapse;
+      }
+      td {
+        width: 35px;
+        height: 35px;
+        border: 1px solid #000;
+      }
+
+      /* Player home colors */
+      .red {
+        background: #ff6b6b;
+      }
+      .green {
+        background: #51cf66;
+      }
+      .yellow {
+        background: #ffd43b;
+      }
+      .blue {
+        background: #74c0fc;
+      }
+
+      /* Player paths */
+      .rpath {
+        background: #ffc9c9;
+      }
+      .gpath {
+        background: #b2f2bb;
+      }
+      .ypath {
+        background: #fff3bf;
+      }
+      .bpath {
+        background: #a5d8ff;
+      }
+
+      /* Center home */
+      .center {
+        background: linear-gradient(45deg, #ff6b6b 50%, #51cf66 50%),
+          linear-gradient(-45deg, #74c0fc 50%, #ffd43b 50%);
+        background-blend-mode: multiply;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <!-- 15x15 grid layout -->
+      <!-- Row 1–6 (Top Red & Green) -->
+      <!-- Row 7–9 (Middle cross and center) -->
+      <!-- Row 10–15 (Bottom Blue & Yellow) -->
+
+      <!-- Row 1–6 -->
+      <tr>
+        <td class="red" colspan="6" rowspan="6"></td>
+        <td class="rpath"></td>
+        <td class="rpath"></td>
+        <td class="rpath"></td>
+        <td class="green" colspan="6" rowspan="6"></td>
+      </tr>
+      <tr>
+        <td class="rpath"></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="rpath"></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="rpath"></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="rpath"></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="rpath"></td>
+        <td></td>
+        <td></td>
+      </tr>
+
+      <!-- Row 7 -->
+      <tr>
+        <td></td>
+        <td></td>
+        <td class="rpath"></td>
+        <td class="rpath"></td>
+        <td class="rpath"></td>
+        <td></td>
+        <td class="rpath"></td>
+        <td class="center" rowspan="3" colspan="3"></td>
+        <td class="gpath"></td>
+        <td></td>
+        <td class="gpath"></td>
+        <td class="gpath"></td>
+        <td class="gpath"></td>
+      </tr>
+
+      <!-- Row 8 -->
+      <tr>
+        <td></td>
+        <td></td>
+        <td class="rpath"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="rpath"></td>
+        <td class="gpath"></td>
+        <td></td>
+        <td></td>
+        <td class="gpath"></td>
+      </tr>
+
+      <!-- Row 9 -->
+      <tr>
+        <td></td>
+        <td></td>
+        <td class="rpath"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="rpath"></td>
+        <td class="gpath"></td>
+        <td></td>
+        <td></td>
+        <td class="gpath"></td>
+      </tr>
+
+      <!-- Row 10–15 -->
+      <tr>
+        <td class="blue" colspan="6" rowspan="6"></td>
+        <td></td>
+        <td></td>
+        <td class="bpath"></td>
+        <td class="yellow" colspan="6" rowspan="6"></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td class="bpath"></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td class="bpath"></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td class="bpath"></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td class="bpath"></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td class="bpath"></td>
+      </tr>
+    </table>
+  </body>
+</html>
