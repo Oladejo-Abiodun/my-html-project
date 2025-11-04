@@ -193,7 +193,7 @@ header {
 }
 
 .item-follow {
-  background-image: url(../images/bg-2x.png);
+  background-image: url(./images/bg-2x.png);
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
